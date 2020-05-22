@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+/home/ubuntu/dev_ros2_ws/build/detectreon_densepose/detectreon_densepose.egg-info/PKG-INFO
+/home/ubuntu/dev_ros2_ws/build/detectreon_densepose/detectreon_densepose.egg-info/SOURCES.txt
+/home/ubuntu/dev_ros2_ws/build/detectreon_densepose/detectreon_densepose.egg-info/dependency_links.txt
+/home/ubuntu/dev_ros2_ws/build/detectreon_densepose/detectreon_densepose.egg-info/entry_points.txt
+/home/ubuntu/dev_ros2_ws/build/detectreon_densepose/detectreon_densepose.egg-info/requires.txt
+/home/ubuntu/dev_ros2_ws/build/detectreon_densepose/detectreon_densepose.egg-info/top_level.txt
+/home/ubuntu/dev_ros2_ws/build/detectreon_densepose/detectreon_densepose.egg-info/zip-safe
+detectreon_densepose/__init__.py
+detectreon_densepose/densepose.py
+resource/detectreon_densepose
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

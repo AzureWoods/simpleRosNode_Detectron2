@@ -1,0 +1,6 @@
+source;share/imgpub_pkg/hook/pythonpath.ps1
+source;share/imgpub_pkg/hook/pythonpath.dsv
+source;share/imgpub_pkg/hook/pythonpath.sh
+source;share/imgpub_pkg/hook/ament_prefix_path.ps1
+source;share/imgpub_pkg/hook/ament_prefix_path.dsv
+source;share/imgpub_pkg/hook/ament_prefix_path.sh

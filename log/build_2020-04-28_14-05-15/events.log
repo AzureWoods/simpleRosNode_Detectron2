@@ -1,0 +1,10 @@
+[0.000000] (-) TimerEvent: {}
+[0.000312] (-) JobUnselected: {'identifier': 'cv_bridge'}
+[0.000561] (-) JobUnselected: {'identifier': 'detectreon_densepose'}
+[0.000589] (-) JobUnselected: {'identifier': 'image_geometry'}
+[0.000610] (-) JobUnselected: {'identifier': 'opencv_tests'}
+[0.000631] (-) JobUnselected: {'identifier': 'vision_opencv'}
+[0.000654] (imgpub_pkg) JobQueued: {'identifier': 'imgpub_pkg', 'dependencies': OrderedDict([('cv_bridge', '/home/ubuntu/dev_ros2_ws/install/cv_bridge')])}
+[0.000814] (imgpub_pkg) JobStarted: {'identifier': 'imgpub_pkg'}
+[0.019468] (imgpub_pkg) JobEnded: {'identifier': 'imgpub_pkg', 'rc': 1}
+[0.029785] (-) EventReactorShutdown: {}

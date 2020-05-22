@@ -1,0 +1,22 @@
+[0.696s] running egg_info
+[0.696s] writing /home/ubuntu/dev_ros2_ws/build/detectreon_densepose/detectreon_densepose.egg-info/PKG-INFO
+[0.696s] writing dependency_links to /home/ubuntu/dev_ros2_ws/build/detectreon_densepose/detectreon_densepose.egg-info/dependency_links.txt
+[0.696s] writing entry points to /home/ubuntu/dev_ros2_ws/build/detectreon_densepose/detectreon_densepose.egg-info/entry_points.txt
+[0.696s] writing requirements to /home/ubuntu/dev_ros2_ws/build/detectreon_densepose/detectreon_densepose.egg-info/requires.txt
+[0.697s] writing top-level names to /home/ubuntu/dev_ros2_ws/build/detectreon_densepose/detectreon_densepose.egg-info/top_level.txt
+[0.727s] reading manifest file '/home/ubuntu/dev_ros2_ws/build/detectreon_densepose/detectreon_densepose.egg-info/SOURCES.txt'
+[0.728s] writing manifest file '/home/ubuntu/dev_ros2_ws/build/detectreon_densepose/detectreon_densepose.egg-info/SOURCES.txt'
+[0.728s] running build
+[0.728s] running build_py
+[0.728s] copying detectreon_densepose/densepose.py -> /home/ubuntu/dev_ros2_ws/build/detectreon_densepose/build/lib/detectreon_densepose
+[0.728s] running install
+[0.729s] running install_lib
+[0.729s] copying /home/ubuntu/dev_ros2_ws/build/detectreon_densepose/build/lib/detectreon_densepose/densepose.py -> /home/ubuntu/dev_ros2_ws/install/detectreon_densepose/lib/python3.6/site-packages/detectreon_densepose
+[0.730s] byte-compiling /home/ubuntu/dev_ros2_ws/install/detectreon_densepose/lib/python3.6/site-packages/detectreon_densepose/densepose.py to densepose.cpython-36.pyc
+[0.730s] running install_data
+[0.731s] running install_egg_info
+[0.732s] removing '/home/ubuntu/dev_ros2_ws/install/detectreon_densepose/lib/python3.6/site-packages/detectreon_densepose-0.0.0-py3.6.egg-info' (and everything under it)
+[0.733s] Copying /home/ubuntu/dev_ros2_ws/build/detectreon_densepose/detectreon_densepose.egg-info to /home/ubuntu/dev_ros2_ws/install/detectreon_densepose/lib/python3.6/site-packages/detectreon_densepose-0.0.0-py3.6.egg-info
+[0.733s] running install_scripts
+[0.750s] Installing detection script to /home/ubuntu/dev_ros2_ws/install/detectreon_densepose/lib/detectreon_densepose
+[0.750s] writing list of installed files to '/home/ubuntu/dev_ros2_ws/build/detectreon_densepose/install.log'

@@ -1,0 +1,8 @@
+[0.000000] (-) TimerEvent: {}
+[0.000279] (-) JobUnselected: {'identifier': 'cv_bridge'}
+[0.000464] (-) JobUnselected: {'identifier': 'detectreon_densepose'}
+[0.000502] (-) JobUnselected: {'identifier': 'image_geometry'}
+[0.000682] (-) JobUnselected: {'identifier': 'imgpub_pkg'}
+[0.000732] (-) JobUnselected: {'identifier': 'opencv_tests'}
+[0.000751] (-) JobUnselected: {'identifier': 'vision_opencv'}
+[0.000769] (-) EventReactorShutdown: {}

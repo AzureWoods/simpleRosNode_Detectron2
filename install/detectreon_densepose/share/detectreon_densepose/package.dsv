@@ -1,0 +1,6 @@
+source;share/detectreon_densepose/hook/pythonpath.ps1
+source;share/detectreon_densepose/hook/pythonpath.dsv
+source;share/detectreon_densepose/hook/pythonpath.sh
+source;share/detectreon_densepose/hook/ament_prefix_path.ps1
+source;share/detectreon_densepose/hook/ament_prefix_path.dsv
+source;share/detectreon_densepose/hook/ament_prefix_path.sh

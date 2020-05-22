@@ -1,0 +1,3 @@
+[console_scripts]
+imgpub = imgpub_pkg.imgpub_node:main
+

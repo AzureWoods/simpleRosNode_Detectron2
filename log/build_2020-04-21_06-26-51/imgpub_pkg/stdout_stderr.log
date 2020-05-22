@@ -1,0 +1,22 @@
+[0.474s] running egg_info
+[0.474s] writing /home/ubuntu/dev_ros2_ws/build/imgpub_pkg/imgpub_pkg.egg-info/PKG-INFO
+[0.474s] writing dependency_links to /home/ubuntu/dev_ros2_ws/build/imgpub_pkg/imgpub_pkg.egg-info/dependency_links.txt
+[0.475s] writing entry points to /home/ubuntu/dev_ros2_ws/build/imgpub_pkg/imgpub_pkg.egg-info/entry_points.txt
+[0.475s] writing requirements to /home/ubuntu/dev_ros2_ws/build/imgpub_pkg/imgpub_pkg.egg-info/requires.txt
+[0.475s] writing top-level names to /home/ubuntu/dev_ros2_ws/build/imgpub_pkg/imgpub_pkg.egg-info/top_level.txt
+[0.505s] reading manifest file '/home/ubuntu/dev_ros2_ws/build/imgpub_pkg/imgpub_pkg.egg-info/SOURCES.txt'
+[0.506s] writing manifest file '/home/ubuntu/dev_ros2_ws/build/imgpub_pkg/imgpub_pkg.egg-info/SOURCES.txt'
+[0.506s] running build
+[0.507s] running build_py
+[0.507s] copying imgpub_pkg/imgpub_node.py -> /home/ubuntu/dev_ros2_ws/build/imgpub_pkg/build/lib/imgpub_pkg
+[0.507s] running install
+[0.507s] running install_lib
+[0.508s] copying /home/ubuntu/dev_ros2_ws/build/imgpub_pkg/build/lib/imgpub_pkg/imgpub_node.py -> /home/ubuntu/dev_ros2_ws/install/imgpub_pkg/lib/python3.6/site-packages/imgpub_pkg
+[0.508s] byte-compiling /home/ubuntu/dev_ros2_ws/install/imgpub_pkg/lib/python3.6/site-packages/imgpub_pkg/imgpub_node.py to imgpub_node.cpython-36.pyc
+[0.509s] running install_data
+[0.509s] running install_egg_info
+[0.511s] removing '/home/ubuntu/dev_ros2_ws/install/imgpub_pkg/lib/python3.6/site-packages/imgpub_pkg-0.0.0-py3.6.egg-info' (and everything under it)
+[0.511s] Copying /home/ubuntu/dev_ros2_ws/build/imgpub_pkg/imgpub_pkg.egg-info to /home/ubuntu/dev_ros2_ws/install/imgpub_pkg/lib/python3.6/site-packages/imgpub_pkg-0.0.0-py3.6.egg-info
+[0.512s] running install_scripts
+[0.528s] Installing imgpub script to /home/ubuntu/dev_ros2_ws/install/imgpub_pkg/lib/imgpub_pkg
+[0.528s] writing list of installed files to '/home/ubuntu/dev_ros2_ws/build/imgpub_pkg/install.log'

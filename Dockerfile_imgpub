@@ -1,0 +1,17 @@
+FROM ros:eloquent-ros-desktop-bionic
+
+ENV srcpath /home/dev_ws/src/imgpub_pkg
+
+RUN apt-get update && apt-get install -y \
+    ros-eloquent-cv-bridge python3-opencv \
+    && mkdir -p $srcpath
+
+COPY ./src/imgpub_pkg $srcpath
+COPY ./imgpub_entry.sh /
+
+RUN /bin/bash -c "source /opt/ros/eloquent/setup.bash" \
+    && cd /home/dev_ws \
+    && colcon build --packages-select imgpub_pkg
+
+ENTRYPOINT ["/usr/bin/env"]
+CMD ["bash", "/imgpub_entry.sh"]

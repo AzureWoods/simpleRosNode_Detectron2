@@ -1,0 +1,84 @@
+FROM nvidia/cuda:10.1-cudnn7-devel-ubuntu18.04
+
+# setup timezone
+RUN echo 'Etc/UTC' > /etc/timezone && \
+    ln -s /usr/share/zoneinfo/Etc/UTC /etc/localtime && \
+    apt-get update && \
+    apt-get install -q -y --no-install-recommends tzdata && \
+    rm -rf /var/lib/apt/lists/*
+
+# install packages
+RUN apt-get update && apt-get install -q -y --no-install-recommends \
+    dirmngr \
+    gnupg2 \
+    && rm -rf /var/lib/apt/lists/*
+
+# setup keys
+RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
+
+# setup sources.list
+RUN echo "deb http://packages.ros.org/ros2/ubuntu bionic main" > /etc/apt/sources.list.d/ros2-latest.list
+
+# setup environment
+ENV LANG C.UTF-8
+ENV LC_ALL C.UTF-8
+
+# install bootstrap tools
+RUN apt-get update && apt-get install --no-install-recommends -y \
+    build-essential \
+    git \
+    python3-colcon-common-extensions \
+    python3-colcon-mixin \
+    python3-rosdep \
+    python3-vcstool \
+    && rm -rf /var/lib/apt/lists/*
+
+ENV ROS_DISTRO eloquent
+
+# bootstrap rosdep
+RUN rosdep init && \
+  rosdep update --rosdistro $ROS_DISTRO
+
+# setup colcon mixin and metadata
+RUN colcon mixin add default \
+      https://raw.githubusercontent.com/colcon/colcon-mixin-repository/master/index.yaml && \
+    colcon mixin update && \
+    colcon metadata add default \
+      https://raw.githubusercontent.com/colcon/colcon-metadata-repository/master/index.yaml && \
+    colcon metadata update
+
+# install ros2 packages
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    ros-eloquent-desktop=0.8.4-1* \
+    && rm -rf /var/lib/apt/lists/*
+
+# install ros package dependencies
+RUN apt-get update && apt-get install -y \
+    ros-eloquent-cv-bridge \
+    python3-opencv \
+    python3-pip
+
+# install detectron2
+RUN pip3 install -U torch==1.4 torchvision==0.5 -f https://download.pytorch.org/whl/cu101/torch_stable.html
+RUN pip3 install cython pyyaml==5.1
+RUN pip3 install -U 'git+https://github.com/cocodataset/cocoapi.git#subdirectory=PythonAPI'
+RUN pip3 install detectron2 -f https://dl.fbaipublicfiles.com/detectron2/wheels/cu101/index.html
+
+# copy ros package and build package
+ENV DETPATH=/home/dev_ws/src/detectreon_densepose \
+    IMGPATH=/home/dev_ws/src/imgpub_pkg
+
+RUN mkdir -p $DETPATH \
+    && mkdir -p $IMGPATH
+
+COPY ./src/imgpub_pkg $IMGPATH
+COPY ./src/detectreon_densepose $DETPATH
+COPY ./det_entrypoint.sh /
+
+WORKDIR /home/dev_ws
+
+RUN /bin/bash -c "source /opt/ros/eloquent/setup.bash" \
+    && colcon build --packages-select detectreon_densepose
+
+ENTRYPOINT ["/det_entrypoint.sh"]

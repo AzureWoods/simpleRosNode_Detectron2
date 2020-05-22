@@ -1,0 +1,3 @@
+[console_scripts]
+detection = detectreon_densepose.densepose:main
+

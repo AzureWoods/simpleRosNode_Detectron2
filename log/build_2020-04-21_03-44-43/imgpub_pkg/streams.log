@@ -1,0 +1,24 @@
+[0.262s] Invoking command in '/home/ubuntu/dev_ros2_ws/src/imgpub_pkg': PYTHONPATH=/home/ubuntu/dev_ros2_ws/install/imgpub_pkg/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base /home/ubuntu/dev_ros2_ws/build/imgpub_pkg build --build-base /home/ubuntu/dev_ros2_ws/build/imgpub_pkg/build install --prefix /home/ubuntu/dev_ros2_ws/install/imgpub_pkg --record /home/ubuntu/dev_ros2_ws/build/imgpub_pkg/install.log --single-version-externally-managed
+[0.487s] running egg_info
+[0.488s] writing /home/ubuntu/dev_ros2_ws/build/imgpub_pkg/imgpub_pkg.egg-info/PKG-INFO
+[0.488s] writing dependency_links to /home/ubuntu/dev_ros2_ws/build/imgpub_pkg/imgpub_pkg.egg-info/dependency_links.txt
+[0.489s] writing entry points to /home/ubuntu/dev_ros2_ws/build/imgpub_pkg/imgpub_pkg.egg-info/entry_points.txt
+[0.489s] writing requirements to /home/ubuntu/dev_ros2_ws/build/imgpub_pkg/imgpub_pkg.egg-info/requires.txt
+[0.489s] writing top-level names to /home/ubuntu/dev_ros2_ws/build/imgpub_pkg/imgpub_pkg.egg-info/top_level.txt
+[0.519s] reading manifest file '/home/ubuntu/dev_ros2_ws/build/imgpub_pkg/imgpub_pkg.egg-info/SOURCES.txt'
+[0.521s] writing manifest file '/home/ubuntu/dev_ros2_ws/build/imgpub_pkg/imgpub_pkg.egg-info/SOURCES.txt'
+[0.521s] running build
+[0.521s] running build_py
+[0.521s] copying imgpub_pkg/imgpub_node.py -> /home/ubuntu/dev_ros2_ws/build/imgpub_pkg/build/lib/imgpub_pkg
+[0.521s] running install
+[0.522s] running install_lib
+[0.522s] copying /home/ubuntu/dev_ros2_ws/build/imgpub_pkg/build/lib/imgpub_pkg/imgpub_node.py -> /home/ubuntu/dev_ros2_ws/install/imgpub_pkg/lib/python3.6/site-packages/imgpub_pkg
+[0.523s] byte-compiling /home/ubuntu/dev_ros2_ws/install/imgpub_pkg/lib/python3.6/site-packages/imgpub_pkg/imgpub_node.py to imgpub_node.cpython-36.pyc
+[0.523s] running install_data
+[0.524s] running install_egg_info
+[0.526s] removing '/home/ubuntu/dev_ros2_ws/install/imgpub_pkg/lib/python3.6/site-packages/imgpub_pkg-0.0.0-py3.6.egg-info' (and everything under it)
+[0.526s] Copying /home/ubuntu/dev_ros2_ws/build/imgpub_pkg/imgpub_pkg.egg-info to /home/ubuntu/dev_ros2_ws/install/imgpub_pkg/lib/python3.6/site-packages/imgpub_pkg-0.0.0-py3.6.egg-info
+[0.527s] running install_scripts
+[0.543s] Installing imgpub script to /home/ubuntu/dev_ros2_ws/install/imgpub_pkg/lib/imgpub_pkg
+[0.543s] writing list of installed files to '/home/ubuntu/dev_ros2_ws/build/imgpub_pkg/install.log'
+[0.563s] Invoked command in '/home/ubuntu/dev_ros2_ws/src/imgpub_pkg' returned '0': PYTHONPATH=/home/ubuntu/dev_ros2_ws/install/imgpub_pkg/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base /home/ubuntu/dev_ros2_ws/build/imgpub_pkg build --build-base /home/ubuntu/dev_ros2_ws/build/imgpub_pkg/build install --prefix /home/ubuntu/dev_ros2_ws/install/imgpub_pkg --record /home/ubuntu/dev_ros2_ws/build/imgpub_pkg/install.log --single-version-externally-managed
